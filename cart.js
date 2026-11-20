@@ -3,7 +3,9 @@
 // Håll varukorgens lines privat med en closure.
 
 import { subTotal } from "./receipt.js";
+subTotal()
 
 export const createCart = (products) => {
   // Skriv din kod här
+  
 };

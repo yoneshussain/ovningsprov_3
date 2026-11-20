@@ -4,4 +4,9 @@
 
 export const subTotal = (lines, products) => {
   // Skriv din kod här
+  const prices = []
+
+  products.forEach((product) => {
+    
+  })
 };
