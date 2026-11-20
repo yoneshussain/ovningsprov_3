@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Övningsprov 3 – Avancerad frontendutveckling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Avancerad frontendutveckling</p>
+      <h1>Övningsprov 3</h1>
+      <p>Välj en fråga för att läsa uppgiften och testa din JavaScript-kod.</p>
+    </header>
+
+    <section class="toolbar" aria-label="Välj fråga">
+      <label for="questionSelect">Fråga</label>
+      <select id="questionSelect">
+        <!-- <option value="1">Fråga 1 – Array methods</option> -->
+        <!-- <option value="2">Fråga 2 – Reduce och objekt</option> -->
+        <!-- <option value="3">Fråga 3 – Spread och destructuring</option> -->
+        <!-- <option value="4">Fråga 4 – Arrow functions</option> -->
+        <!-- <option value="5">Fråga 5 – DOM: produkter</option> -->
+        <!-- <option value="6">Fråga 6 – DOM: knappar</option> -->
+        <!-- <option value="7">Fråga 7 – Fetch användare</option> -->
+        <!-- <option value="8">Fråga 8 – Todo-lista</option> -->
+        <option value="9">Fråga 9 – OOP</option>
+        <option value="10">Fråga 10 – Closures och moduler</option>
+      </select>
+      <button id="loadButton" type="button">Ladda fråga</button>
+    </section>
+
+    <section class="panel">
+      <h2>Testyta</h2>
+      <p class="hint">Fråga 5–8 använder elementen nedan. Fråga 1–4 skriver sina testresultat i konsolen.</p>
+      <ul id="products"></ul>
+      <div id="buttons" class="button-area"></div>
+      <div id="users"></div>
+      <ul id="todos"></ul>
+    </section>
+
+    <section class="panel">
+      <div class="console-heading">
+        <h2>Console</h2>
+        <button id="clearButton" class="quiet" type="button">Rensa</button>
+      </div>
+      <p class="hint">Öppna även webbläsarens utvecklarverktyg (Console) för vanliga console.log-utskrifter.</p>
+      <pre id="output" aria-live="polite">Välj en fråga och klicka på ”Ladda fråga”.</pre>
+    </section>
+
+    <footer>
+      <p>Tips: kör sidan via VS Code Live Server. ES-moduler och fetch fungerar inte alltid korrekt om du öppnar index.html direkt som en fil.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
